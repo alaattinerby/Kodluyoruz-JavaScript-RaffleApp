@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle App | Kodluyoruz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <p class="message">Çekilişe Katılacak Olan Kişileri ve Hediyeleri Virgül İle Ayırarak Yazınız...</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="raffleCard">
+                    <span class="raffleCard__title">Çekilişe Katılacak Kişiler</span>
+                    <input type="text" class="raffleCard__textInput" id="contacts" placeholder="Örneğin; Ali Berk,Ahmet Can,">                   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="raffleCard">
+                    <span class="raffleCard__title">Verilecek Hediyeler</span>
+                    <input type="text" class="raffleCard__textInput" id="gifts" placeholder="Örneğin; Hediye1,Hediye2,">
+                </div>
+            </div>
+
+            <button type="submit" id="submit">Çekiliş Yap</button>
+        </div>
+        <div class="row" id="result"></div>
+    </div>    
+    <script src="app.js"></script>
+</body>
+</html>
