@@ -10,6 +10,7 @@ submit.addEventListener("click", function(){
     var giftsArray = [];
     var resultArray = [];       
 
+    result.innerHTML="";
     if(contacts.value != "" && gifts.value != "")
     {
         var cArray = contacts.value.split(',');
